@@ -11,6 +11,7 @@ public class GithubUserDTO {
 
     public String getName() {
         return name;
+
     }
 
     public void setName(String name) {

@@ -30,7 +30,6 @@ public class GitHubProvider {
         try {
             response = client.newCall(request).execute();
             String str = response.body().string();
-            System.out.println("用户的完整token" + str);
             String accessToken = str.split("&")[0].split("=")[1];
             return accessToken;
         } catch (Exception e) {
